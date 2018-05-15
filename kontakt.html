@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lejdis</title>
+    <link rel="shortcut icon" href="favicon_butterfly.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="myStyle.css">
+
+    <!-- <script>
+    $(document).ready(function(){
+        // alert("hura");
+    })
+    </script> -->
+</head>
+
+<body>       
+    <nav class="navbar navbar-default navbar-fixed-top menuStyle">  
+        <div class="container-fluid">      
+            <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+            <div class="navbar-header">                                   
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+                    <span class="sr-only">Rozwiń nawigację</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Lejdis</a>
+            </div>        
+            <!-- Grupowanie elementów menu w celu lepszego wyświetlania na urządzeniach moblinych -->
+            <div class="collapse navbar-collapse" id="menu-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="indexZal.html">O nas</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Oferta<span class="caret"></span></a>
+                        <ul class="dropdown-menu menuStyle" >
+                            <li><a href="ofertaTwarz.html">Zabiegi na twarz</a></li>
+                            <li><a href="ofertaDepil.html">Depilacje</a></li>
+                            <li><a href="ofertaManicure.html">Manicure</a></li>
+                            <li><a href="ofertaPedicure.html">Pedicure</a></li>
+                        </ul>                
+                    </li>
+                    <li > <a href="cennik.html">Cennik</a></li>
+                    <li> <a href="galeria.html">Galeria</a></li>
+                    <li><a href="regulamin.html">Regulamin</a></li>
+                    <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div>
+        <div class="container firstElement">
+            <div class="row">      
+                <div class="panel panel-default panelStyle">
+                    <div class="panel-body panelBodyStyle">
+                        <div class="panel-container col-lg-2">
+                                <img src="zdjecia/logo_small2.png" alt="logo">                    
+                        </div>    
+                        <div class="panel-container col-lg-9" >
+                            
+                            <div class="panel-container col-lg-5">
+                                <form id="formularz">
+                                    <div class="panel-container col-lg-12">
+                                        <p> <b>Napisz do nas</b></p>
+                                    </div>
+                                    <div class="panel-container col-lg-12">
+                                        <input type="text" name="name" id="nameId" placeholder="Imię i nazwisko" required data-error="Wpisz imię i nazwisko" class="formularzStyle">
+                                    </div>
+                                    <div class="panel-container col-lg-12">
+                                        <input type="email" name="email" id="emailId" placeholder="Adres email" required data-error="Wpisz poprawny email" class="formularzStyle">
+                                    </div>
+                                    <div class="panel-container col-lg-12">
+                                        <textarea name="message" id="messageId" placeholder="Wiadomość" cols="39" rows="14" required data-error="Wpisz imię i nazwisko" class="formularzStyle" ></textarea>
+                                    </div>             
+                                    <div class="panel-container col-lg-12">                                        
+                                        <input type="checkbox" name="chkBox" id="chkBoxId" class="formularzStyle">
+                                        <label for="chkBoxId" style="font-weight:normal">Wyślij kopię tego maila do mnie</label>
+                                    </div>                          
+                                
+                                    <div  class="panel-container col-lg-12">
+                                        <button type="reset" id="wyczyscId" style="float:left" class="btn active">Wyczyść</button>
+                                        <button type="submit" id="wyslijId" style="float:right" class="btn disabled">Wyślij</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="panel-container col-lg-7">
+                                <p><b>Salon kosmetyczny LEJDIS</b></p>
+                                <p class="par">ul. Dębowa 42</p> 
+                                <p class="par"> 40-106 Katowice</p> 
+                                <p >telefon: 691203467, 327474854</p> 
+                                <p class="par">Czynne: poniedziałek-piątek 10-18</p>
+                                <p class="bigIndent2">sobota 10-14</p>                                
+
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.9163770827504!2d18.9976413156409!3d50.274819979451685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce1ad188a133%3A0xbb7e203979f9d915!2s+Lejdisss+D%C4%99bowa+42%2C+Katowice!5e0!3m2!1spl!2spl!4v1515869937082" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>    -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.9163770827504!2d18.9976413156409!3d50.274819979451685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce1ad188a133%3A0xbb7e203979f9d915!2s+Lejdisss+D%C4%99bowa+42%2C+Katowice!5e0!3m2!1spl!2spl!4v1515869937082" width="400" height="300" style="border:0" allowfullscreen></iframe>   
+                           
+                            </div>
+                        </div>
+                        <div class="panel-container col-lg-1"></div>
+                    </div>                      
+                </div>                    
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-footer">
+        <div class="row">  
+            <div class="panel-container col-sm-12" style="text-align: center" >
+                <span> <small>2017 Gabinet kosmetyczny LEJDIS</small>
+                    <a class="btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/LEJDIS-salon-kosmetyczny-2321369691421399/">
+                        <span class="fa fa-facebook-square" aria-hidden="true"></span>
+                    </a>    
+                </span>
+            </div>
+        </div>
+    </div>
+
+<script src="javaScriptKontakt.js"></script>
+</body>
+</html>

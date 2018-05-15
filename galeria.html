@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lejdis</title>
+    <link rel="shortcut icon" href="favicon_butterfly.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="myStyle.css">
+    <!-- https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js -->
+    <script>
+        $(document).ready(function(e){
+            var idElem="";
+            $("#panelBodyPhotos .img_panel_body").click(function(){
+                idElem=$(this).attr("id");
+                $("ol#carouselIndicators").find("li").removeClass("active");
+                $("ol#carouselIndicators ."+idElem).addClass("active");
+
+                $("#myCarouselInner").find(".item").removeClass("active");
+                $("#myCarouselInner ."+idElem).addClass("active");
+            })
+
+            $("#panelBodyPhotos .img_panel_body").mousedown(function(e){
+                idElem=$(this).attr("id");
+                if (e.which==2){
+                    window.open("zdjecia/IMG_big_"+idElem+".jpg", '_blank');                        
+                }
+            })
+        })
+    </script>
+</head>
+<body>    
+    <nav class="navbar navbar-default navbar-fixed-top menuStyle">  
+        <div class="container-fluid">      
+            <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+            <div class="navbar-header">                                   
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+                    <span class="sr-only">Rozwiń nawigację</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Lejdis</a>
+            </div>        
+            <!-- Grupowanie elementów menu w celu lepszego wyświetlania na urządzeniach moblinych -->
+            <div class="collapse navbar-collapse" id="menu-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="indexZal.html">O nas</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Oferta<span class="caret"></span></a>
+                        <ul class="dropdown-menu menuStyle" >
+                            <li><a href="ofertaTwarz.html">Zabiegi na twarz</a></li>
+                            <li><a href="ofertaDepil.html">Depilacje</a></li>
+                            <li><a href="ofertaManicure.html">Manicure</a></li>
+                            <li><a href="ofertaPedicure.html">Pedicure</a></li>
+                        </ul>                
+                    </li>
+                    <li> <a href="cennik.html">Cennik</a></li>
+                    <li class="active"> <a href="galeria.html">Galeria</a></li>
+                    <li><a href="regulamin.html">Regulamin</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div>
+    <div class="container firstElement">
+        <div class="row">
+            <div class="panel-body" id="panelBodyPhotos">
+                <div class="panel-container col-lg-2"></div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_0.jpg"  alt="Paznokcie" class = "img_panel_body" id="0">
+                    </div>
+                </div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_1.jpg" alt="Paznokcie" class = "img_panel_body" id="1">
+                    </div>
+                </div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_2.jpg" alt="Paznokcie" class = "img_panel_body" id="2">
+                    </div>
+                </div>
+                <div class="panel-container col-lg-1"></div>
+
+                <div class="panel-container col-lg-2"></div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_3.jpg" alt="Paznokcie" class = "img_panel_body" id="3">
+                    </div>
+                </div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_4.jpg" alt="Paznokcie" class = "img_panel_body" id="4">
+                    </div>
+                </div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_5.jpg" alt="Paznokcie" class = "img_panel_body" id="5">
+                      </div>
+                </div>   
+                <div class="panel-container col-lg-1"></div>             
+                
+                <div class="panel-container col-lg-2"></div>                
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_6.jpg" alt="Paznokcie" class = "img_panel_body" id="6">
+                    </div>
+                </div>
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_7.jpg" alt="Gabinet" class = "img_panel_body" id="7">
+                    </div>
+                </div>    
+                <div class="panel-container col-lg-3">
+                    <div class="thumbnail">
+                        <img src="zdjecia/IMG_8.jpg" alt="Gabinet" class = "img_panel_body"  id="8">
+                    </div>
+                </div> 
+                <div class="panel-container col-lg-1"></div>           
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+    <div id="modalPhotos" class="modal">
+            
+    <!-- Modal content -->
+    <div class="modal-dialog">
+        <div class="modal-content">            
+            <span class="close">&times;</span>
+            <br> <br>  
+            <div class="carousel slide"  id="photoSlide">
+                    <!-- Wskaźniki w postaci kropek -->
+                    <ol class="carousel-indicators" id="carouselIndicators">
+                        <li data-target="#photoSlide"  data-slide-to="0"  class="0 active"></li>
+                        <li data-target="#photoSlide"  data-slide-to="1" class="1"></li>
+                        <li data-target="#photoSlide"  data-slide-to="2" class="2"></li>
+                        <li data-target="#photoSlide"  data-slide-to="3" class="3"></li>
+                        <li data-target="#photoSlide"  data-slide-to="4" class="4"></li>
+                        <li data-target="#photoSlide"  data-slide-to="5" class="5"></li>
+                        <li data-target="#photoSlide"  data-slide-to="6" class="6"></li>
+                        <li data-target="#photoSlide"  data-slide-to="7" class="7"></li>
+                        <li data-target="#photoSlide"  data-slide-to="8" class="8"></li>
+                    </ol>
+                    <div class="carousel-inner" id="myCarouselInner">
+                        <div class="item 0 active">
+                            <img src="zdjecia/IMG_small_0.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>
+                        <div class="item 1">
+                            <img src="zdjecia/IMG_small_1.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>
+                        <div class="item 2">
+                            <img src="zdjecia/IMG_small_2.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>
+                        <div class="item 3">
+                            <img src="zdjecia/IMG_small_3.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>     
+                        <div class="item 4">
+                            <img src="zdjecia/IMG_small_4.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>
+                        <div class="item 5">
+                            <img src="zdjecia/IMG_small_5.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>
+                        <div class="item 6">
+                            <img src="zdjecia/IMG_small_6.jpg" alt="Paznokcie" class = "img_carusel">
+                        </div>
+                        <div class="item 7">
+                            <img src="zdjecia/IMG_small_7.jpg" alt="Gabinet" class = "img_carusel">
+                        </div>                             
+                        <div class="item 8">
+                                <img src="zdjecia/IMG_small_8.jpg" alt="Gabinet" class = "img_carusel">
+                        </div>
+                    </div>
+                    <!-- Strzałki do przewijania -->
+                    <a class="left carousel-control" href="#photoSlide" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#photoSlide" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+            </div>                
+        </div>
+    </div>
+    </div>
+
+    <div class="panel-footer">
+        <div class="row">  
+            <div class="panel-container col-sm-12" style="text-align: center" >
+                <span> <small>2017 Gabinet kosmetyczny LEJDIS</small>
+                    <a class="btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/LEJDIS-salon-kosmetyczny-2321369691421399/">
+                        <span class="fa fa-facebook-square" aria-hidden="true"></span>
+                    </a>    
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javaScript.js"></script>
+</body>
+</html>

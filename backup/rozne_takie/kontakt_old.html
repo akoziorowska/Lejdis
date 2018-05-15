@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function(){        
+                $("#naglowek").load("naglowek.html");  
+                // $.get("naglowek.html", function(data) {
+                //         $("#naglowek").html(data);
+                //      });   
+                $("#imie").focus();   
+        })
+    </script>
+
+</head>
+<body>    
+    <div id="naglowek"></div>
+    <form id="formularz">
+
+        <div>
+            <label for="imie">Imie</label>
+            <input type="text" id="imie" placeholder="podaj imię">
+        </div>
+
+        <div>
+            <label for="nazwisko">Nazwisko</label>
+            <input type="text" id="nazwisko" placeholder="podaj nazwisko">
+        </div>
+
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="Wpisz swój adres email">
+        </div>    
+        
+        <button type="submit">Wyslij</button>
+        <button type="reset">Wyczyść</button>
+
+    </form>
+
+    
+
+</body>
+</html>
